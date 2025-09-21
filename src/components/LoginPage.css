@@ -1,0 +1,119 @@
+/* Background Container */
+.login-container {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #c3dafe, #a3bffa);
+  padding: 2rem;
+  box-sizing: border-box;
+  overflow-y: auto; /* allows internal scrolling without moving viewport */
+}
+
+/* Card Style */
+.login-card {
+  background: #fff;
+  padding: 2.5rem 3rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 100%;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+/* Title (Login + Dashboard shared) */
+.login-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2d3748;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Form or Section Group */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group h3 {
+  font-size: 1.2rem;
+  color: #4c51bf;
+  margin-bottom: 0.5rem;
+}
+
+.form-group p,
+.form-group ul {
+  color: #4a5568;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.form-group ul {
+  padding-left: 1.2rem;
+  list-style-type: disc;
+}
+
+.form-group li {
+  margin-bottom: 0.5rem;
+}
+
+/* Reusable Link Style */
+.dashboard-link {
+  color: #4c51bf;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.dashboard-link:hover {
+  color: #3c366b;
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+  .login-card {
+    padding: 2rem;
+    max-width: 600px;
+  }
+
+  .login-title {
+    font-size: 1.75rem;
+  }
+
+  .form-group h3 {
+    font-size: 1.1rem;
+  }
+
+  .form-group p,
+  .form-group ul {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .login-card {
+    padding: 1.5rem;
+    max-width: 100%;
+    border-radius: 12px;
+  }
+
+  .login-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .form-group h3 {
+    font-size: 1rem;
+  }
+
+  .form-group p,
+  .form-group ul {
+    font-size: 0.9rem;
+  }
+
+  .form-group ul {
+    padding-left: 1rem;
+  }
+}

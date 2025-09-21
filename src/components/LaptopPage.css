@@ -1,0 +1,228 @@
+/* ---------- Dashboard Styles ---------- */
+
+/* Full page background */
+.dashboard-container {
+  min-height: 100vh;
+  width: 100vw;
+  background: linear-gradient(135deg, #c3dafe, #a3bffa);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* allow content to scroll if large */
+  padding: 2rem;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+/* Card */
+.dashboard-card {
+  background: #fff;
+  padding: 2.5rem 3rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+/* Title */
+.dashboard-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2d3748;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Sections */
+.dashboard-section {
+  margin-bottom: 1.5rem;
+}
+
+.dashboard-section h3 {
+  font-size: 1.2rem;
+  color: #4c51bf;
+  margin-bottom: 0.5rem;
+}
+
+.dashboard-section p,
+.dashboard-section ul {
+  color: #4a5568;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.dashboard-section ul {
+  padding-left: 1.2rem;
+}
+
+.dashboard-section li {
+  margin-bottom: 0.5rem;
+}
+
+/* Link style */
+.dashboard-link {
+  color: #4c51bf;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.dashboard-link:hover {
+  color: #3c366b;
+}
+
+/* ---------- Laptop Page Styles ---------- */
+
+/* Container with background and center alignment */
+.laptop-page-container {
+  min-height: 100vh;
+  width: 100vw;
+  padding: 2rem;
+  background: linear-gradient(135deg, #c3dafe, #a3bffa);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Page Title */
+.page-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2d3748;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.laptop-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  width: 100%;
+}
+
+.laptop-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.laptop-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Laptop image */
+.laptop-image {
+  width: 100%;
+  max-width: 160px;
+  height: auto;
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+/* Laptop name */
+.laptop-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+}
+
+/* Laptop description */
+.laptop-description {
+  font-size: 0.95rem;
+  color: #4a5568;
+  margin-bottom: 0.75rem;
+  min-height: 48px;
+}
+
+/* Laptop price */
+.laptop-price {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #4c51bf;
+}
+
+/* Cart Summary Section */
+.cart-summary {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+}
+
+.cart-summary h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #2d3748;
+  margin-bottom: 1rem;
+}
+
+.cart-summary ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cart-summary li {
+  font-size: 1rem;
+  color: #4a5568;
+  padding: 6px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.cart-summary li:last-child {
+  border-bottom: none;
+}
+
+/* Checkout Button */
+.checkout-btn {
+  background-color: #38a169;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.checkout-btn:hover {
+  background-color: #2f855a;
+  transform: scale(1.05);
+}
+
+/* ---------- Responsive Adjustments ---------- */
+@media (max-width: 900px) {
+  .laptop-card {
+    padding: 1rem;
+  }
+  .page-title, .dashboard-title {
+    font-size: 1.7rem;
+  }
+  .cart-summary {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .laptop-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .cart-summary {
+    width: 100%;
+  }
+  .laptop-card {
+    padding: 0.8rem;
+  }
+}

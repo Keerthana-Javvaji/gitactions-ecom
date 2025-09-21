@@ -1,0 +1,34 @@
+/* ---------- Navbar Container ---------- */
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  padding: 1rem 2rem;
+  background-color: #2d3748;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Navbar Links */
+.nav-link {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  color: #63b3ed; /* light blue hover to match page theme */
+  transform: scale(1.05);
+}
+
+/* Responsive Navbar: stack links on mobile */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    gap: 12px;
+  }
+}
