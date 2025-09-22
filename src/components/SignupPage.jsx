@@ -23,7 +23,7 @@ export default function SignupPage() {
     }
 
     try {
-      const response = await axios.post(`${API_URL}/api/auth/signup`, {
+      const response = await axios.post(`${API_URL}/auth/signup`, {
         username: name,
         email,
         password,
